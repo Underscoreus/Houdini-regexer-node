@@ -6,10 +6,12 @@ Note: As of right now the tool only works on either points or primitives as thes
 
 ## Installation
 
-Too install this otl all you have to do is download it and place it in one of these folders:
+To install this otl all you have to do is download it and place it in one of these folders:
 
 Windows: C:\Program Files\Side Effects Software\Houdini xx.x.xxx\houdini\otls
+
 Mac: /Applications/Houdini/Houdinixx.x.xxx/houdini/otls
+
 Linux: /opt/hfsxx.x.xxx/houdini/otls
 
 After restarting houdini the node should be avalible to place down in SOPs.
@@ -20,7 +22,9 @@ It can be found either by right clicking and hovering over the "digital assets" 
 ### General
 
 **Group Settings** - These are your standard houdini group settings to control what geometry the node should run over.
+
 **Run Over** - Choose where the attribute you want to work with is stored, on points or on primitives.
+
 **Mode** - Currently there are two modes, "Deletion" and "String Processing". "Deletion" allows you to input parameters and automatically blast away geometry based on the results. This was done because often times when I was doing this kind of string processing I was going to delete geo either way, so building it in saves alot of time. "String Processing" allows you to breakdown, split up or keep parts one of your string attributes. 
 
 **Regex Command** - This allows you too choose what command you want to run, note that there are more avalible commands in the string processing section than in the delete section. For a better overview of what each command does have a look [here](https://www.sidefx.com/docs/houdini/vex/functions/re_find.html) (Look for the different commands at the bottom of the page or on the let hand overview).
@@ -32,7 +36,7 @@ However, most of the commands do exactly what it sounds like they do, so reading
 
 **Start Position** - Indicates where to start the search in the string. By using a value of 0 the node will look through the whole string attribute, but by for example setting it to 5, the node will skip the first 5 letters of the string attribute, then start looking.
 
-**Invert** - Inverts the results of the node. So if you searched for "Red_Points" it would return you all the nodes that does **not** have "Red_Point" in their name.
+**Invert** - Inverts the results of the node. So if you searched for "Red_Points" it would return you all the nodes that does **_not_** have "Red_Point" in their name.
 
 ### Deletion Mode specific
 
