@@ -4,6 +4,8 @@ A node that combines the functionallity of all the different regular expression 
 
 Note: As of right now the tool only works on either points or primitives as these were the use cases I needed it for, but if there are any requests for it, I would not mind expanding it to work with detail and vertex attributes in the future.
 
+Video overview: https://vimeo.com/445508925
+
 ## Installation
 
 To install this otl all you have to do is download it and place it in one of these folders:
